@@ -13,5 +13,5 @@
 
 ## Установка
 
-* Установите расширение для пользовательских скриптов: [Tampermonkey](https://www.tampermonkey.net) или [аналогичное](https://openuserjs.org/about/Userscript-Beginners-HOWTO#how-do-i-get-going-).
+* Установите браузерное расширение для пользовательских скриптов: [Tampermonkey](https://www.tampermonkey.net) или [аналогичное](https://openuserjs.org/about/Userscript-Beginners-HOWTO#how-do-i-get-going-).
 * Установите скрипт *inoagent*: https://openuserjs.org/scripts/chev/inoagent.
