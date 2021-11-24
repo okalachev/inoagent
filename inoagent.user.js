@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            inoagent
-// @version         1.0
+// @version         1.1
 // @description     Hide foreign agent banners on popular media websites
 // @description:ru  Скрыть баннер об иностранном агенте на сайтах популярных СМИ
 // @author          Oleg Kalachev
@@ -11,6 +11,7 @@
 // @match           https://istories.media/*
 // @match           https://pasmi.ru/*
 // @match           https://zona.media/*
+// @match           https://republic.ru/*
 // @grant           GM_addStyle
 // @run-at          document-start
 // @updateURL       https://openuserjs.org/meta/chev/inoagent.meta.js
@@ -37,4 +38,7 @@ if (location.host == 'meduza.io') {
 
 } else if (location.host == 'pasmi.ru') {
 	GM_addStyle('.content .excerpt:first-of-type { display: none !important }');
+
+} else if (location.host == 'republic.ru') {
+    GM_addStyle('.ino_agent { display: none }');
 }
