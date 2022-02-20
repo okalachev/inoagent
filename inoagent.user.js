@@ -12,6 +12,7 @@
 // @match           https://pasmi.ru/*
 // @match           https://zona.media/*
 // @match           https://republic.ru/*
+// @match           https://twitter.com/*
 // @grant           GM_addStyle
 // @run-at          document-start
 // @updateURL       https://openuserjs.org/meta/chev/inoagent.meta.js
@@ -41,4 +42,9 @@ if (location.host == 'meduza.io') {
 
 } else if (location.host == 'republic.ru') {
 	GM_addStyle('.ino_agent { display: none }');
+
+} else if (location.host == 'twitter.com') {
+	GM_addStyle('div[style^=\'background-image: url("https://pbs.twimg.com/media/FMCLxrRXoAA26Yw\'] { display: none !important }');
+	// doesn't work due to Content Security Policy
+	// https://github.com/Tampermonkey/tampermonkey/issues/296
 }
