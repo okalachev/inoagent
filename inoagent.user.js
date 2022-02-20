@@ -40,5 +40,5 @@ if (location.host == 'meduza.io') {
 	GM_addStyle('.content .excerpt:first-of-type { display: none !important }');
 
 } else if (location.host == 'republic.ru') {
-    GM_addStyle('.ino_agent { display: none }');
+	GM_addStyle('.ino_agent { display: none }');
 }
